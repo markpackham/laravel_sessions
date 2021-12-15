@@ -11,7 +11,11 @@ class PagesController extends Controller
     {
 
         Session::put('name', ['Bill']);
-        Session::push('name', 'Will');
+        Session::put('age', [30, 35, 40]);
+
+        Session::forget('name');
+
+        dd(Session::all());
 
         return view('index');
     }
