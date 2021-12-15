@@ -24,7 +24,6 @@ class PagesController extends Controller
   "_flash" => array:2 [▶]
   "age" => array:3 [▶]
 ]
-
         */
         dd(Session::all());
 
