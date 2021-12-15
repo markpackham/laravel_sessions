@@ -13,7 +13,7 @@ class PagesController extends Controller
         Session::put('name', ['Bill']);
         Session::put('age', [30, 35, 40]);
 
-        Session::forget('name');
+        Session::flush();
 
         dd(Session::all());
 
