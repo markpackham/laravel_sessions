@@ -10,7 +10,8 @@ class PagesController extends Controller
     public function index()
     {
 
-        Session::put('name', 'Bill');
+        Session::put('name', ['Bill']);
+        Session::push('name', 'Will');
 
         return view('index');
     }
